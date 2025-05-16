@@ -1,0 +1,225 @@
+@use "@/assets/scss/abstract/_mixin.scss" as *;
+
+.pc {
+  .AL-MS-04-008 {
+    .pop_wrap {
+      .pop_content {
+        padding: 0;
+
+        .first-content-item {
+          margin: 0;
+
+          .content-item {
+            border: none;
+            margin: 0 auto;
+
+            .cont-head {
+              margin-bottom: 5.6rem;
+
+              .cont-title-main {
+                @include Hd_xLg_s32_lh38;
+              }
+            }
+            .con_rounded {
+              padding: 3.2rem 4.8rem;
+              border-radius: 12px;
+              border: 1px solid #dce0e5;
+
+              .card-group {
+                .name {
+                  @include Lb_Sm_s14_lh20;
+                  font-weight: 500;
+                }
+                .value {
+                  display: flex;
+                  align-items: center;
+                  @include Lb_Sm_s14_lh20;
+
+                  .description {
+                    margin-left: 0.2rem;
+                    font-size: var(--font-size-sm);
+                  }
+                }
+              }
+            }
+
+            .form-box {
+              &.mt_24 {
+                margin-top: 2.4rem;
+              }
+
+              .text_info {
+                padding-left: 2.2rem;
+                color: #66707a;
+                @include Pg_Sm_s14_lh20;
+
+                &::before {
+                  top: -0.1rem;
+                  left: 0;
+                  width: 2rem;
+                  height: 2rem;
+                  background: url("/images/v2/common/ico_text_info.svg") 0 0 / auto no-repeat;
+                }
+              }
+            }
+          }
+
+          .bottom_float {
+            .float_btn_wrap {
+              margin-top: 0;
+              padding: 1.6rem 2.4rem 2.4rem;
+            }
+
+            &.pd-0 {
+              .float_btn_wrap {
+                padding: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+    .alms0400502 {
+      .pop_content {
+        padding: 2.4rem 2rem 4rem;
+      }
+    }
+
+    .card-group {
+      .name {
+        @include Lb_Sm_s14_lh20;
+      }
+      .value {
+        @include Lb_Sm_s14_lh20;
+        display: flex;
+        align-items: center;
+
+        .description {
+          margin-left: 0.2rem;
+          font-size: var(--font-size-sm);
+        }
+      }
+    }
+
+    .form-box {
+      &.mt_24 {
+        margin-top: 2.4rem;
+      }
+      .text_info {
+        padding-left: 2.2rem;
+        color: #66707a;
+
+        &::before {
+          top: -0.1rem;
+          left: 0;
+          width: 2rem;
+          height: 2rem;
+          background: url("/images/v2/common/ico_text_info.svg") 0 0 / auto no-repeat;
+        }
+      }
+
+      .check_st {
+        label {
+          color: var(--txt-gray_B3B3B3, #b3b3b3);
+          font-size: 14px;
+          font-weight: 600;
+          line-height: 24px; /* 171.429% */
+          letter-spacing: -0.5px;
+
+          &::before {
+            background: url("/images/v2/common/ico_roaming_chk_off.svg") 0 0 / auto no-repeat;
+          }
+        }
+
+        input:checked {
+          & + label {
+            color: #fc6969;
+            font-weight: var(--fontweight-bold);
+            &::before {
+              background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Ccircle cx='12' cy='12' r='9' fill='%23FC6969'/%3E%3Cpath d='M15.2008 10.4004L11.0698 14.1558C10.9173 14.2945 10.6843 14.2945 10.5317 14.1558L8.80078 12.5822' stroke='white' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");
+            }
+          }
+        }
+      }
+
+      .country-box {
+        padding: 1.4rem 0;
+        font-size: var(--font-size-ml);
+        font-weight: var(--fontweight-normal);
+      }
+    }
+
+    .cont-head .cont-sub-title {
+      font-size: var(--font-size-sm);
+
+      br {
+        display: block;
+      }
+    }
+  }
+}
+
+.mobile {
+  .AL-MS-04-008 {
+    .content-item {
+      .cont-head {
+        margin-bottom: 4rem;
+
+        .cont-title-main {
+          @include Hd_Sm_s22_lh28;
+        }
+      }
+
+      .con_rounded {
+        .card-group {
+          .name {
+            @include Lb_Sm_s14_lh20;
+            font-weight: 500;
+          }
+          .value {
+            display: flex;
+            align-items: center;
+
+            @include Lb_Sm_s14_lh20;
+          }
+        }
+      }
+      .form-box {
+        .text_info {
+          padding-left: 2.2rem;
+          color: #66707a;
+
+          &::before {
+            top: -0.1rem;
+            left: 0;
+            width: 2rem;
+            height: 2rem;
+            background: url("/images/v2/common/ico_text_info.svg") 0 0 / auto no-repeat;
+          }
+        }
+        .check_st {
+          label {
+            color: var(--txt-gray_909090, #909090);
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 24px; /* 171.429% */
+            letter-spacing: -0.5px;
+
+            &::before {
+              background: url("/images/v2/common/ico_roaming_chk_off.svg") 0 0 / auto no-repeat;
+            }
+          }
+          input:checked {
+            & + label {
+              color: #fc6969;
+              font-weight: var(--fontweight-bold);
+              &::before {
+                background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Ccircle cx='12' cy='12' r='9' fill='%23FC6969'/%3E%3Cpath d='M15.2008 10.4004L11.0698 14.1558C10.9173 14.2945 10.6843 14.2945 10.5317 14.1558L8.80078 12.5822' stroke='white' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
