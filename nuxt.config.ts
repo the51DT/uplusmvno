@@ -12,7 +12,8 @@ export default defineNuxtConfig({
   build: {
     transpile: ["vuetify"],
   },
-
+  target: 'static',
+  ssr: false,
   modules: ['@nuxtjs/mdc'],
   mdc: {
     highlight: {
