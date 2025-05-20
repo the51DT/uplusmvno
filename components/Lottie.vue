@@ -1,6 +1,8 @@
 <template>
   <div v-for="(a, i) in data" :key="i">
-    <Vue3Lottie v-if="a.show" :animationLink="a.data" loop autoplay />
+    <client-only>
+      <Vue3Lottie v-if="a.show" :animationLink="a.data" loop autoplay />
+    </client-only>
   </div>
 </template>
 
